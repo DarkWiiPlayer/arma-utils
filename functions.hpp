@@ -1,5 +1,6 @@
 class utils {
 	class distanceRespawn{};
-	class holdToTeleport{};
 	class gogglesOverlay{};
+	class holdToTeleport{};
+	class initArsenal{};
 };

@@ -9,3 +9,16 @@ class CfgFunctions
 	};
 };
 ```
+
+## Respawn
+
+```sqf
+[
+	this, // respawning object
+	100, // distance
+	10, // time before vehicle respawns
+	[], // array of curators to add new objects to
+	{}, // code called on respawn, params are [new, old]
+	
+] spawn DWP_fnc_distanceRespawn;
+```

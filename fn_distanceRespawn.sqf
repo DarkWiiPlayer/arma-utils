@@ -5,7 +5,7 @@
 	Arguments[]
 		1: Target object
 		2: Distance
-		3: Cooldown
+		3: Respawn Time
 		4: Curator: array
 		5: onRespawn: code
 */
@@ -48,6 +48,8 @@ while {true} do {
 			_curator addCuratorEditableObjects [[_old], false];
 		}
 	};
+
+	sleep _cooldown;
 	
 	// Spawn new vehicle
 	
@@ -77,6 +79,4 @@ while {true} do {
 	if (not alive _old) then {
 		deleteVehicle _old;
 	};
-
-	sleep _cooldown;
 };
